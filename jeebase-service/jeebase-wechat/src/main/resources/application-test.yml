@@ -31,7 +31,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.20.188/hisc2_test?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    url: jdbc:mysql://119.23.66.181:3306/daycard?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
     username: myHisc
     password: root4Hisc
     initialSize: 1
@@ -58,8 +58,8 @@ spring:
     useGlobalDataSourceStat: true
   mail:
     host: smtp.exmail.qq.com
-    username: 
-    password: 
+    username:
+    password:
     port: 465
     protocol: smtp
     #是否用启用加密传送的协议验证项
@@ -94,8 +94,8 @@ j2cache:
   cache-clean-mode: active
   redis-client: jedis
 qiniu:
-    access-key: 
-    secret-key: 
+    access-key:
+    secret-key:
     zone: zone0
     bucket: hisc
     base-url: http://img.jeebase.com.cn/
@@ -107,8 +107,8 @@ aliyun:
     sign-name:
     reg-code:
 baidu:
-    ai.clientId: 
-    ai.clientSecret: 
+    ai.clientId:
+    ai.clientSecret:
 restTemplate:
     #连接池的最大连接数默认为0
     maxTotalConnect: 0

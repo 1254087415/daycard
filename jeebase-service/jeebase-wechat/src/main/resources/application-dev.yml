@@ -3,7 +3,7 @@ server:
     #tomcat:
     #    max-threads: 1000
     #    min-spare-threads: 30
-    port: 8080
+    port: 8083
     uri-encoding: utf-8
 system:
     #注册用户默认密码
@@ -29,9 +29,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.20.188/jeebase?useUnicode=true&characterEncoding=utf8
-    username: myHisc
-    password: nDoYD5ntWC8A97R3Pc4NIQVdZh0KHpdYYiaWXLcxDPpkGwi83eklxhWaoQij6v1YYMX+R7ICTGY+Q7a2rv42jw==
+    url: jdbc:mysql://119.23.66.181:3306/daycard?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: OFE7V/nEjek+pFuyD1VWDclFEAFWO2m4gmUGqEVNcMc5xQo1K9wPKBD/dmTm8dVNyfC7mMUb9/SYKLlxH/5StQ==
     initialSize: 1
     minIdle: 3
     maxActive: 20
@@ -116,7 +116,7 @@ restTemplate:
     readTimeout: 30000
 xxlJob:
   #xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
-  admin.addresses: http://172.16.20.188:8083/hisc-job
+  admin.addresses: http://119.23.66.181:8083/hisc-job
   #xxl-job 执行器AppName[选填]，为空则关闭自动注册
   executor.appname: hisc-v3
   #xxl-job 执行器IP[选填]，为空则自动获取

@@ -1,0 +1,17 @@
+<!-- 头部状态栏 -->
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">daycard</view>
+</cu-custom>
+<!-- 背景图片-->
+<image src='/images/BasicsBg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+
+<!-- 轮播图 -->
+<swiper autoplay="true" interval="5000" duration="500" circular="true">
+  <swiper-item wx:for="{{swiperList}}" wx:key="this">
+    <view style=''>
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}">1</image>
+    </view>
+  </swiper-item>
+</swiper>
+
+

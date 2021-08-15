@@ -1,0 +1,50 @@
+/* pages/front/front.wxss */
+
+/* 轮播图样式 */
+swiper {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  height: 305rpx;
+  margin-top: 10rpx;
+}
+
+swiper swiper-item view {
+  background-color: #F8F8FF;
+  height: 285rpx;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 14rpx;
+}
+
+swiper swiper-item image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 14rpx;
+}
+
+/* 相关功能样式 */
+#related {
+  height: 200rpx;
+  border-radius: 14rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+#related .action {
+  margin-top: 40rpx;
+  height: 190rpx;
+}
+
+#related .action .cuIcon-cu-image {
+  height: 100rpx;
+}
+#related .action .cuIcon-cu-image image{
+  height: 100rpx;
+  width: 100rpx;
+}
+#related .action .text {
+  font-size: 36rpx;
+}
+

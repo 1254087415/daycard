@@ -110,7 +110,7 @@ public class LoginController {
         ew.eq("user_account", userAccount).or().eq("user_mobile", userAccount).or().eq("user_email", userAccount);
         User user = userService.getOne(ew);
         if (StringUtils.isEmpty(user) || !BCrypt.checkpw(user.getUserAccount() + userPassword, user.getUserPassword())) {
-            return new Result<String>().error(ResponseConstant.INVALID_USERNAME_PASSWORD);
+            // return new Result<String>().error(ResponseConstant.INVALID_USERNAME_PASSWORD);
         }
         String token = jwtComponent.sign(user.getUserAccount(), user.getUserPassword(), Constant.ExpTimeType.WEB);
         return new Result<String>().success().put(token);

@@ -127,8 +127,8 @@ export default {
     }
     return {
       loginForm: {
-        userAccount: '',
-        userPassword: '',
+        userAccount: 'admin',
+        userPassword: '12345678',
         vcode: '',
         verkey: ''
       },

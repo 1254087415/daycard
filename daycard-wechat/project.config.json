@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.4.2",
   "appid": "wx8bfeee96e506b8b2",
-  "projectname": "daycard-miniprogram",
+  "projectname": "daycard-wechat",
   "debugOptions": {
     "hidedInDevtools": []
   },

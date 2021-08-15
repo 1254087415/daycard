@@ -60,4 +60,14 @@ public class LoginUser {
     public void setVerkey(String verkey) {
         this.verkey = verkey;
     }
+    
+    @Override
+    public String toString() {
+        return "LoginUser{" +
+                "userAccount='" + userAccount + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", vcode='" + vcode + '\'' +
+                ", verkey='" + verkey + '\'' +
+                '}';
+    }
 }

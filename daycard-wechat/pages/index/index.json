@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "front": "/pages/front/front"
+  }
+}

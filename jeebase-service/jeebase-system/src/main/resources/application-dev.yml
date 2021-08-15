@@ -26,12 +26,15 @@ logging:
   path: /opt/server/logs
   config: classpath:config/logback-spring.xml
 spring:
+  devtools:
+    restart:
+      enabled: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1/jeebase?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://119.23.66.181:3306/daycard?useUnicode=true&characterEncoding=utf8
     username: root
-    password: Ivsq2GcFWRfjqPUP4hhlPWpqJo9C51z3PSCOpI7dSA3OVIkKJ1gjD1uFT7Nj5nUJGrIZH96LkdcaYTLfIjsglw==
+    password: OFE7V/nEjek+pFuyD1VWDclFEAFWO2m4gmUGqEVNcMc5xQo1K9wPKBD/dmTm8dVNyfC7mMUb9/SYKLlxH/5StQ==
     initialSize: 1
     minIdle: 3
     maxActive: 20
@@ -51,7 +54,7 @@ spring:
     # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
     filters: config,stat,slf4j
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJWk6iOtnXNdOrO8V/AzG894T1Jmu5izG8gFgeojrdnbYobZPvKwo436H2SZnCbCy1ua7yj63JoBEUhW1OiCbbsCAwEAAQ==
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIohocl3Q1YWNFrrYzXkzmBU9qqDBOKGYDwMbKTIKZ5AdrVK1GVmK9O6rOLcE2z0JeowWHEXRxZeG3YatLnOJbECAwEAAQ==
     # 合并多个DruidDataSource的监控数据
     useGlobalDataSourceStat: true
 mybatis-plus:
@@ -106,7 +109,7 @@ restTemplate:
   readTimeout: 30000
 xxlJob:
   #xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
-  admin.addresses: http://172.16.20.188:8083/hisc-job
+  admin.addresses: http://119.23.66.181:8083/hisc-job
   #xxl-job 执行器AppName[选填]，为空则关闭自动注册
   executor.appname: hisc-v3
   #xxl-job 执行器IP[选填]，为空则自动获取

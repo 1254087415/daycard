@@ -58,8 +58,8 @@ spring:
     useGlobalDataSourceStat: true
   mail:
     host: smtp.exmail.qq.com
-    username: 
-    password: 
+    username:
+    password:
     port: 465
     protocol: smtp
     #是否用启用加密传送的协议验证项
@@ -108,8 +108,8 @@ aliyun:
     sign-name:
     reg-code:
 baidu:
-    ai.clientId: 
-    ai.clientSecret: 
+    ai.clientId:
+    ai.clientSecret:
 restTemplate:
     #连接池的最大连接数默认为0
     maxTotalConnect: 0
@@ -121,7 +121,7 @@ restTemplate:
     readTimeout: 30000
 xxlJob:
   #xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
-  admin.addresses: http://172.16.20.188:8083/hisc-job
+  admin.addresses: http://119.23.66.181:8083/hisc-job
   #xxl-job 执行器AppName[选填]，为空则关闭自动注册
   executor.appname: hisc-v3
   #xxl-job 执行器IP[选填]，为空则自动获取
