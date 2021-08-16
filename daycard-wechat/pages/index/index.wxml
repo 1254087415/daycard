@@ -3,7 +3,8 @@
 
 <!-- 主功能标签 -->
 <!-- 不能有id,怎么解决样式的问题 -->
-<view class="cu-bar tabbar bg-white " id="related">
+<!--
+<view class="cu-bar tabbar bg-white related">
   <view class="action align-center" bindtap="NavChange" data-cur="basics">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
@@ -30,6 +31,7 @@
   </view>
 </view>
 
+-->
 
 <!-- 底部标签页 -->
 <view class="cu-bar tabbar bg-white shadow foot">

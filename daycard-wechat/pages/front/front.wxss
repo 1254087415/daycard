@@ -1,7 +1,7 @@
 /* pages/front/front.wxss */
 
 /* 轮播图样式 */
-swiper {
+.front-swiper {
   width: 100%;
   position: absolute;
   top: 20%;
@@ -9,7 +9,7 @@ swiper {
   margin-top: 10rpx;
 }
 
-swiper swiper-item view {
+.front-swiper .front-swiper-item .item-view {
   background-color: #F8F8FF;
   height: 285rpx;
   width: 95%;
@@ -18,33 +18,37 @@ swiper swiper-item view {
   border-radius: 14rpx;
 }
 
-swiper swiper-item image {
+.front-swiper .front-swiper-item .swiper-imgae {
   width: 100%;
   height: 300rpx;
   border-radius: 14rpx;
 }
 
-/* 相关功能样式 */
-#related {
+/* 相关功能 */
+.cu-bar.tabbar.bg-white.related {
+  background: #fff;
+  display: flex;
   height: 200rpx;
   border-radius: 14rpx;
   margin-left: 20rpx;
   margin-right: 20rpx;
 }
 
-#related .action {
+.related .action {
+  flex: 1;
+  text-align: center;
+  align-content: center;
   margin-top: 40rpx;
   height: 190rpx;
 }
 
-#related .action .cuIcon-cu-image {
+.related .action .cuIcon-cu-image {
   height: 100rpx;
 }
-#related .action .cuIcon-cu-image image{
-  height: 100rpx;
-  width: 100rpx;
+.related .action .cuIcon-cu-image image{
+  height: 80rpx;
+  width: 80rpx;
 }
-#related .action .text {
+.related .action .text {
   font-size: 36rpx;
 }
-

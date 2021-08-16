@@ -11,6 +11,12 @@ Component({
    * 组件的初始数据
    */
   data: {
+    PageCur: 'basics',
+    motto: 'Hi 开发者！',
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    cardCur: 0,
     swiperList: [{
       id: 0,
       type: 'image',
