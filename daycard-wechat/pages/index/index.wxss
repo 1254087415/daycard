@@ -1,25 +1,2 @@
 
-/* 相关功能样式 */
-.cu-bar.tabbar.bg-white.related {
-  height: 200rpx;
-  border-radius: 14rpx;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-}
-
-.related .action {
-  margin-top: 40rpx;
-  height: 190rpx;
-}
-
-.related .action .cuIcon-cu-image {
-  height: 100rpx;
-}
-.related .action .cuIcon-cu-image image{
-  height: 100rpx;
-  width: 100rpx;
-}
-.related .action .text {
-  font-size: 36rpx;
-}
 

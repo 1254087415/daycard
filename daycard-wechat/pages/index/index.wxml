@@ -1,62 +1,39 @@
 <!-- 主页 -->
-<front></front>
+<front wx:if="{{PageCur==='front'}}"></front>
 
-<!-- 主功能标签 -->
-<!-- 不能有id,怎么解决样式的问题 -->
-<!--
-<view class="cu-bar tabbar bg-white related">
-  <view class="action align-center" bindtap="NavChange" data-cur="basics">
-    <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
-    </view>
-    <view class="{{PageCur=='basics'?'text-green':'text-gray'}} text">元素</view>
-  </view>
-  <view class="action" bindtap="NavChange" data-cur="component">
-    <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png"></image>
-    </view>
-    <view class="{{PageCur=='component'?'text-green':'text-gray'}} text">组件</view>
-  </view>
-  <view class="action" bindtap="NavChange" data-cur="plugin">
-    <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/plugin{{PageCur=='plugin'?'_cur':''}}.png"></image>
-    </view>
-    <view class="{{PageCur=='plugin'?'text-green':'text-gray'}} text">扩展</view>
-  </view>
-  <view class="action" bindtap="NavChange" data-cur="about">
-    <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
-    </view>
-    <view class="{{PageCur=='about'?'text-green':'text-gray'}} text">关于</view>
-  </view>
-</view>
+<!-- 法律讯息 -->
+<forum wx:if="{{PageCur==='forum'}}"></forum>
 
--->
+<!-- 法律咨询 -->
+<chatList wx:if="{{PageCur === 'chatList'}}"></chatList>
+
+<!-- 我的 -->
+<profile wx:if="{{PageCur=== 'profile'}}"></profile>
 
 <!-- 底部标签页 -->
 <view class="cu-bar tabbar bg-white shadow foot">
-  <view class="action" bindtap="NavChange" data-cur="basics">
+  <view class="action" bindtap="NavChange" data-cur="front">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/basics{{PageCur==='front'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">元素</view>
+    <view class="{{PageCur==='front'?'text-green':'text-gray'}}">首页</view>
   </view>
-  <view class="action" bindtap="NavChange" data-cur="component">
+  <view class="action" bindtap="NavChange" data-cur="forum">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/component{{PageCur==='forum'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">组件</view>
+    <view class="{{PageCur==='forum'?'text-green':'text-gray'}}">法律论坛</view>
   </view>
-  <view class="action" bindtap="NavChange" data-cur="plugin">
+  <view class="action" bindtap="NavChange" data-cur="chatList">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/plugin{{PageCur=='plugin'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/plugin{{PageCur==='chatList'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='plugin'?'text-green':'text-gray'}}">扩展</view>
+    <view class="{{PageCur==='chatList'?'text-green':'text-gray'}}">法律咨询</view>
   </view>
-  <view class="action" bindtap="NavChange" data-cur="about">
+  <view class="action" bindtap="NavChange" data-cur="profile">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/about{{PageCur==='profile'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+    <view class="{{PageCur==='profile'?'text-green':'text-gray'}}">我的</view>
   </view>
 </view>

@@ -1,4 +1,6 @@
 /* pages/front/front.wxss */
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
 
 /* 轮播图样式 */
 .front-swiper {
@@ -25,6 +27,11 @@
 }
 
 /* 相关功能 */
+
+.cu-bar.tabbar-title {
+
+}
+
 .cu-bar.tabbar.bg-white.related {
   background: #fff;
   display: flex;
@@ -45,10 +52,10 @@
 .related .action .cuIcon-cu-image {
   height: 100rpx;
 }
-.related .action .cuIcon-cu-image image{
+.related .action .cuIcon-cu-image .image-item{
   height: 80rpx;
   width: 80rpx;
 }
 .related .action .text {
-  font-size: 36rpx;
+  font-size: 30rpx;
 }

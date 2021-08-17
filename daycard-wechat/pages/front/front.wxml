@@ -1,7 +1,8 @@
 <!-- 头部状态栏 -->
 <cu-custom bgColor="bg-gradual-blue">
-  <view slot="content">daycard</view>
+  <view slot="content">首页</view>
 </cu-custom>
+
 <!-- 背景图片-->
 <image src='/images/BasicsBg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
 
@@ -14,31 +15,41 @@
   </swiper-item>
 </swiper>
 
-<view class="cu-bar tabbar bg-white related" style="display: flex">
+<!-- 相关功能 -->
+<view class="cu-bar tabbar bg-white  related" style="display: flex">
+
+  <!--<view class="cu-bar bg-white tabbar-title">
+    <view class="action">
+      <text class="cuIcon-titles text-green"></text>
+      <text class="text-xl text-bold">关于我们</text>
+    </view>
+  </view>-->
   <view class="action align-center" bindtap="NavChange" data-cur="basics">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png" class="image-item"></image>
     </view>
-    <view class="{{PageCur=='basics'?'text-green':'text-gray'}} text">元素</view>
+    <view class="{{PageCur=='basics'?'text-green':'text-gray'}} text">我的发布</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="component">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png" class="image-item"></image>
     </view>
-    <view class="{{PageCur=='component'?'text-green':'text-gray'}} text">组件</view>
+    <view class="{{PageCur=='component'?'text-green':'text-gray'}} text">提交反馈</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="plugin">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/plugin{{PageCur=='plugin'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/plugin{{PageCur=='plugin'?'_cur':''}}.png" class="image-item"></image>
     </view>
-    <view class="{{PageCur=='plugin'?'text-green':'text-gray'}} text">扩展</view>
+    <view class="{{PageCur=='plugin'?'text-green':'text-gray'}} text">我的消息</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="about">
     <view class='cuIcon-cu-image'>
-      <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+      <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png" class="image-item"></image>
     </view>
-    <view class="{{PageCur=='about'?'text-green':'text-gray'}} text">关于</view>
+    <view class="{{PageCur=='about'?'text-green':'text-gray'}} text">联系我们</view>
   </view>
+
+
 </view>
 
 

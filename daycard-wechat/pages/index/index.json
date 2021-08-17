@@ -1,5 +1,9 @@
 {
   "usingComponents": {
-    "front": "/pages/front/front"
+    "front": "/pages/front/front",
+    "forum": "/pages/forum/forum",
+    "chat": "/pages/chat/chat",
+    "profile": "/pages/profile/profile",
+    "chatList": "/pages/chatList/chatList"
   }
 }
